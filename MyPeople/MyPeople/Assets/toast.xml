@@ -1,0 +1,11 @@
+﻿<toast hint-people="remoteid:joebloggs@contoso.com">
+  <visual lang="en-US">
+    <binding template="ToastGeneric">
+      <text hint-style="body">Oh no, pin me!</text>
+      <text>MyPeople sent you a notification</text>
+    </binding>
+    <binding template="ToastGeneric" experienceType="shoulderTap">
+      <image src="ms-appx:///Assets/khalesi.gif"/>
+    </binding>
+  </visual>
+</toast>
