@@ -236,7 +236,7 @@ private void ShoulderTap_Click(object sender, RoutedEventArgs e)
 }
 ```
 
-How does the ToastNotificationManager know that this is a shoulder tap vs a generic toast? Well... In the payload we set the attribute experienceType="shoulderTap". If the user is not pinned, it will show a toast noification based on the first template ("Oh no, pin me!". If the contact is pinned to the My People Contact Panel then it will use the second template and do the shoulder tap.
+How does the ToastNotificationManager know that this is a shoulder tap vs a generic toast? Well... In the payload we set the attribute experienceType="shoulderTap". If the user is not pinned, it will show a toast noification based on the first template ("Oh no, pin me!"). If the contact is pinned to the My People Contact Panel then it will pop a toast quietly using the first template and use the second template and do the shoulder tap.
 
 ```xml
 <toast hint-people="remoteid:joebloggs@contoso.com">
@@ -314,6 +314,8 @@ protected async override void OnNavigatedTo(NavigationEventArgs e)
     }
 }
 ```
+I want to call out a new feature in C# which I love! Look at how I cast the e.Parameter. I check it's type using the 'is' keyword, and if the 'is' operation returns true, it will populate the variable shareTarget. 
+
 To make sure that only jpg and pngs are sent, I need to declare the Share Target in the Package.appxmanifest.
 
 ![Share Target](Assets/shareTarget.PNG "Share Target")
