@@ -14,7 +14,7 @@ I want to show you how you can use My People in your applications to drive bette
 ## Phases of development
 * Setup Protocol Activation for MyPeople experiences
 * Create a Contact (optional)
-* Annontate a contact
+* Annotate a contact
 * Pin a Contact
 * Shoulder Tap
 * Sharing content as a share target
