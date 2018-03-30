@@ -161,7 +161,7 @@ private async Task CreateAContact()
         
 A contact on it's own is no good though, what we need to do is annotate the contact so we can associate our app to it. We need to apply the supported operations our app can help with. To do this we create a ContactAnnotation.  
 
-### Annontate a contact
+### Annotate a contact
 ```csharp
 private async Task TagAContact(Contact contact)
 {
